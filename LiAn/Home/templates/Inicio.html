@@ -4,16 +4,19 @@
     <title>Live Analytic</title>
 
     {% load static %}
-    <link href="static/CSS/inicio.css", rel="stylesheet">
+    <link href="../static/CSS/inicio.css", rel="stylesheet">
     <link href="{% static 'CSS/inicio.css' %}", rel="stylesheet">
 
 
 </head>
 <body>
     <div id="buttons-box">
-        <a href="http://127.0.0.1:8000/newdashboard/dashboard_new"><button id="buttons"><p>New</p></button></a>
+        <a href="http://127.0.0.1:8000/newdashboard/dashboard_new">
+            <button id="buttons"><p>New</p></button>
+        </a>
         <button id="buttons"><p>Dashboards</p></button>
-        <button id="buttons">Notifications</button>
+        <div id="notification-box"><p>Notifications</p></div>
+        <button id="buttons"><p>Settings</p></button>
     </div>
 </body>
 </html>
