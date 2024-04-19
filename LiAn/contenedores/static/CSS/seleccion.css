@@ -1,10 +1,22 @@
+/*---------- color ----------*/
+:root {
+    --color-green: #41B06E;
+    --color-orange: #FFBB70;
+    --color-background: rgb(32, 29, 26); 
+}
+/*---------- dimensions ----------*/
+:root {
+ padding: none;
+}
+
 * {
     padding: 3px;
     margin: 0px;
 }
 
+
 body {
-    background-color: antiquewhite;
+    background-color: var(--color-background);
 }
 
 
@@ -27,7 +39,8 @@ header {
     border-radius: 12px;
 
     font-size: 20px;
-    color: white;
+    background-color: var(--color-orange);
+    color: var(--color-green);
     background-color: rgba(128, 128, 128, 0.855);
 
 }
