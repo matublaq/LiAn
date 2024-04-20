@@ -2,8 +2,9 @@
 :root {
     --color-green: #41B06E;
     --color-orange: #FFBB70;
-    --color-background: rgb(32, 29, 26); 
+    --color-background: rgb(32, 29, 26);
 }
+
 /*---------- dimensions ----------*/
 :root {
  padding: none;
@@ -13,7 +14,7 @@
     padding: 3px;
     margin: 0px;
 }
-
+/*---------- ----------*/
 
 body {
     background-color: var(--color-background);
@@ -43,4 +44,36 @@ header {
     font-size: 20px;
     background-color: rgba(128, 128, 128, 0.855);
 
+}
+
+/*---------- bashbox ----------*/
+#dashbox-fase1, #dashbox-fase2, #dashbox-fase3, #dashbox-fase4 {
+    display: flex;
+    margin: 50px auto;
+    
+    height: calc(5.1*40px);
+    width: calc(8.9*40px);
+    border-radius: 20px;
+
+    background-color: rgb(64, 75, 75);
+}
+
+.dashbox-fase1-col1, .dashbox-fase1-col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 100%;
+}
+
+
+.dashbox-fase1-col1 button, .dashbox-fase1-col2 button {
+    transform: translate(-50, -50);
+    margin: 15px;
+    border-radius: 10px;
+
+    width: 100px;
+    height: 50px;
 }
