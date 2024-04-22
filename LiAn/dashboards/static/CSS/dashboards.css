@@ -47,7 +47,7 @@ header {
 }
 
 /*---------- bashbox ----------*/
-#dashbox-fase1, #dashbox-fase2, #dashbox-fase3, #dashbox-fase4 {
+#dashbox {
     display: flex;
     margin: 50px auto;
     
@@ -56,9 +56,12 @@ header {
     border-radius: 20px;
 
     background-color: rgb(64, 75, 75);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(0, 255, 255, 0.376);
 }
 
-.dashbox-fase1-col1, .dashbox-fase1-col2 {
+.dashbox-col1, .dashbox-col2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,7 +72,7 @@ header {
 }
 
 
-.dashbox-fase1-col1 button, .dashbox-fase1-col2 button {
+.dashbox-col1 button, .dashbox-col2 button {
     transform: translate(-50, -50);
     margin: 15px;
     border-radius: 10px;
