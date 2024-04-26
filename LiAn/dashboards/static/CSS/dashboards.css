@@ -20,6 +20,9 @@ body {
     background-color: var(--color-background);
 }
 
+main {
+    display: flex;
+}
 
 header {
     display: flex;
@@ -47,36 +50,49 @@ header {
 }
 
 /*---------- bashbox ----------*/
-#dashbox {
-    display: flex;
-    margin: 50px auto;
+#dashbox-fase1, #dashbox-fase2 {
+    position: relative;
+    display: block;
+    margin: 25px;
+    padding: 10px;
     
-    height: calc(5.1*40px);
     width: calc(8.9*40px);
+    height: calc(5.1*40px);
+    min-height: calc(5.1*40px);
+    min-width: calc(8.9*40px);
+    resize: both;
     border-radius: 20px;
+    overflow: hidden;
+
 
     background-color: rgb(64, 75, 75);
     border-style: solid;
-    border-width: 2px;
-    border-color: rgba(0, 255, 255, 0.376);
+    border-width: 0.5px;
+    border-color: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.855); /* x, y, desenfoque, color */
+    
 }
 
-.dashbox-col1, .dashbox-col2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 50%;
-    height: 100%;
-}
-
-
-.dashbox-col1 button, .dashbox-col2 button {
-    transform: translate(-50, -50);
-    margin: 15px;
-    border-radius: 10px;
-
+/*--- fase 1 ---*/
+#dashbox-fase1 button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+    top:50%;
+    left: 50%;
+    
     width: 100px;
     height: 50px;
+    border-radius: 10px;
+
+    background-color: rgba(212, 170, 32, 0.628);
+    color: antiquewhite;
+    border: none;
+    box-shadow: 0 0 10px black;
 }
+#dashbox-fase1 p {
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*--- fase 2 ---*/

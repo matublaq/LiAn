@@ -24,15 +24,15 @@
         <a href="http://127.0.0.1:8000/Home/inicio"><button id="homeButton"><p>Home</p></button></a>
     </header>
     <main>
-        <div id="dashbox">
-            <div class="dashbox-col1">
-                <button>.csv</button>
-                <button>.sqlite3</button>
-            </div>
-            <div class="dashbox-col2">
-                <button>.xlsx</button>
-                <button>html</button>
-            </div>
+        <div id="dashbox-fase1">
+            <!--<script src="../static/JS/dashbox1.js"></script>--> <!-- Test 1 -->
+            <script src="../static/JS/dashbox2.js"></script> <!-- Test 2 -->
+
+            <input type="file", id="fileInput", style="display: none;">
+            <button onclick="document.getElementById('fileInput').click()"><p>Add Data</p></button>
+        </div>
+        <div id="dashbox-fase2">
+
         </div>
     </main>
     <footer>
