@@ -50,7 +50,7 @@ header {
 }
 
 /*---------- bashbox ----------*/
-#dashbox-fase1, #dashbox-fase2 {
+#dashbox-fase1, #dashbox-fase2, #myModal {
     position: relative;
     display: block;
     margin: 25px;
